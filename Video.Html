@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Videos</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #181818;
+    border-bottom: 2px solid #1DB954;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #B3B3B3;
+}
+
+/* Video Styles */
+video {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    outline: none;
+    background: black;
+}
+
+video::-webkit-media-controls-panel {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-pause-button {
+    color: #1DB954;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #181818;
+    border-top: 2px solid #1DB954;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1DB954;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #157938;
+}
+
+    </style>
+
+</head>
+<body>
+    <header><h1>Sample Videos:</h1></header>
+    <main>
+        <p>Normal Video</p>
+        <video src="./Video/1vid.mp4" controls  height="300" width="500" ></video>
+        <p>Poster</p>
+        <video src="./Video/5vid.mp4" controls  height="300"width="500" poster="./img/Motivation.jpg"></video>
+        <p>autoplay</p>
+        <video src="./Video/2vid.mp4" controls  height="300" width="500"autoplay></video>
+        <p>Loop</p>
+        <video src="./Video/3vid.mp4" controls  height="300" width="500"loop></video>
+        <p>muted</p>
+        <video src="./Video/4vid.mp4" controls  height="300"width="500"muted></video>
+        <p>All Atributes already Defined</p>
+        <video src="./Video/6 vid.mp4" controls  height="300"width="500"></video>
+    </main>
+    <footer><img src="./img/thank you.png" alt="" width="400"><a href="./index.html">Return To First Page</a></footer>
+</body>
+</html>

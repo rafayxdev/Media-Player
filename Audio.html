@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Best Songs</title>
+    <style>
+      /* General page styling */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #121212; /* Dark background similar to Spotify */
+        color: #fff; /* White text for contrast */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* Style for the header */
+      header {
+        background-color: #1db954; /* Spotify's signature green */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+
+      /* Style for the main content */
+      main {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 900px;
+      }
+
+      /* Style for each song section */
+      main p {
+        font-size: 1.2rem;
+        color: #b3b3b3; /* Light grey for subtle text */
+        margin-bottom: 10px;
+      }
+
+      /* Style for images */
+      main img {
+        border-radius: 10px; /* Rounded images */
+        margin-bottom: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Image shadow */
+      }
+
+      /* Style for the audio player */
+      audio {
+        width: 300px;
+        margin-bottom: 20px;
+        border-radius: 25px; /* Rounded audio player */
+        background-color: #282828; /* Spotify-style dark audio background */
+        padding: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        outline: none;
+        transition: box-shadow 0.3s ease;
+      }
+
+      /* Hover effect on audio players */
+      audio:hover {
+        box-shadow: 0 6px 15px rgba(30, 215, 96, 0.8); /* Green glow on hover */
+      }
+
+      /* Style for the video player */
+      video {
+        width: 90%;
+        margin-top: 20px;
+        border-radius: 15px;
+        border: 3px solid #1db954; /* Green border for the video */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
+
+      /* Hover effect on video player */
+      video:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        box-shadow: 0 6px 20px rgba(30, 215, 96, 0.8); /* Green glow */
+      }
+
+      footer {
+    padding: 20px;
+    background-color: #181818;
+    border-top: 2px solid #1DB954;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1DB954;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #157938;
+}
+      /* Media Queries for responsiveness */
+      @media (max-width: 768px) {
+        audio {
+          width: 90%;
+        }
+
+        video {
+          width: 100%;
+        }
+
+        footer img {
+          width: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Best Song Collection:</h1></header>
+    <main>
+      <p>Normal</p>
+      <img src="./img/agency.jpg" alt="" width="100" height="100" />
+      <audio
+        src="./Audio/Agency_-_Talha_Anjum__Rap_Demon__Prod._by_UMAIR_(Official_Lyric_Video)(256k).mp3"
+        controls
+      ></audio
+      ><br />
+      <p>Loop</p>
+      <img src="./img/Ilahi.jpg" alt="Deleted" width="100" height="100" />
+      <audio
+        src="./Audio/Ilahi_Full_Video_Song__Yeh_Jawaani_Hai_Deewani__Ranbir_Kapoor,_Deepika_Padukone__Pritam(256k).mp3"
+        controls
+        loop
+      ></audio
+      ><br />
+      <p>autoplay</p>
+      <img src="./img/Her.jfif" alt="Ilahi" width="100" height="100" />
+      <audio
+        src="./Audio/Her_(Official_Audio)_-_Shubh(256k).mp3"
+        controls
+        autoplay
+      ></audio
+      ><br />
+      <p>preload=none</p>
+      <img src="./img/Kesariya.jfif" alt="kesariya " width="100" height="100" />
+      <audio
+        src="./Audio/Kesariya_Mashup__Jay_Guldekar__Brahmastra_Arijit_Singh__Ranbir_K_Alia__Kabira_[Bollywood_LoFi](256k).mp3"
+        controls
+        preload="none"
+      ></audio>
+      <br />
+      <p>preload=metadata</p>
+      <img
+        src="./img/Phir se Udh chala.jpg"
+        alt="despacito "
+        width="100"
+        height="100"
+      />
+      <audio
+        src="./Audio/Phir se udh chala.mpeg"
+        controls
+        preload="metadata"
+      ></audio>
+      <br />
+      <p>preload=auto</p>
+      <img
+        src="./img/apna bana le.jfif"
+        alt="Phir se udh chala"
+        width="100"
+        height="100"
+      />
+      <audio
+        src="./Audio/Apna_Bana_Le_-_Bhediya__Varun_Dhawan,_Kriti_Sanon_Sachin-Jigar,_Arijit_Singh,_Amitabh_Bhattacharya(256k).mp3"
+        controls
+        preload="auto"
+      ></audio>
+      <p>And Last Video Song</p>
+      <video
+        src="./Audio/AUR - TU HAI KAHAN - Raffey - Usama - Ahad (Official Music Video).mp4"
+        controls
+        poster="./img/Aur poster.jpg"
+        height="300"
+      ></video>
+    </main>
+    <footer>
+      <img src="./img/thank you.png" alt="" width="300" /><a href="./index.html"
+        >Return To First Page</a
+      >
+    </footer>
+  </body>
+</html>

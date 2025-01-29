@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Website Containing 6 audio and 6 video file</title>
+   <style>
+    /* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for a modern look */
+    color: #fff; /* White text for contrast */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style for the header */
+header {
+    background-color: #1db954; /* Spotify's signature green */
+    padding: 5px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds depth with a text shadow */
+}
+
+/* Style for the main content */
+main {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Styling for the informational text in the main section */
+main div {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #b3b3b3; /* Subtle grey text for contrast */
+    margin-bottom: 20px;
+}
+
+/* Styling for clickable figures */
+figure {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px; /* Rounded borders for a modern look */
+    background-color: #1a1a1a; /* Dark background for image containers */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds depth with a shadow */
+}
+
+/* Style for the images inside figures */
+figure img {
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s ease; /* Image zoom-in effect */
+    filter: invert(1);
+}
+
+/* Hover effect on the entire figure */
+figure:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(30, 215, 96, 0.8); /* Green glow on hover */
+}
+
+/* Hover effect on the images */
+figure:hover img {
+    transform: scale(1.1); /* Further zoom-in on the image */
+}
+
+/* Style for links */
+a {
+    text-decoration: none;
+    color: #1db954; /* Spotify's green for clickable text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    figure img {
+        width: 150px;
+    }
+
+    main div {
+        font-size: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <header><h1>Best Song Collection and Sample Video:</h1></header>
+    <main>
+        <div>If you want to Listen Best Songs:</div>
+        <figure><a href="Audio.html"><img src="./img/audio image.png" alt="File Missing" width="200">👈Click Me</a></figure>
+        
+    
+    </main>
+    <main>
+        <div>If you want to Watch Best Videos:</div>
+        <figure><a href="Video.Html"><img src="./img/video.png" alt="File Missing" width="200">👈Click Me</a></figure>
+    </main>
+
+
+    
+</body>
+</html>
